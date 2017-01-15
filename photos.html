@@ -1,29 +1,66 @@
-<!DOCTYPE HTML>
+<!doctype html>
 
-<html>
-	<head>
-		<title>Photos</title>
-		<meta charset="utf-8" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />    
-		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"> -->
+<html lang="en">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+<head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A portfolio template that uses Material Design Lite.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>TBNano</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.blue_grey-light_blue.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+	<link rel="stylesheet" href="./dist/css/material-photo-gallery.css">
+	
+	<style>
+			body {
+				background: #fefefe;
+				color: white;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+				text-align: center;
+				font-family: 'Roboto Mono';
+			}
 
+			h2 {
+				font-weight: 300;
+				margin: 4vh 4vw;
+				letter-spacing: 3px;
+				color: grey;
+				text-transform: uppercase;
+			}
+
+			.demo-btn {
+				display: inline-block;
+				margin: 0 2.5px 4vh 2.5px;
+				text-decoration: none;
+				color: grey;
+				padding: 15px;
+				line-height: 1;
+				min-width: 140px;
+				background: rgba(0,0,0, 0.07);
+				border-radius: 6px;
+			}
+
+			.demo-btn:hover {
+				background: rgba(0,0,0,0.12);
+			}
+
+			@media (max-width: 640px) {
+
+				.demo-btn {
+					min-width: 0;
+					font-size: 14px;
+				}
+			}
+		</style>
 </head>
-	</head>
-	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
             <div class="mdl-layout__header-row portfolio-logo-row">
                 <span class="mdl-layout__title">
@@ -33,88 +70,57 @@
             </div>
             <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
                 <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
-                    <a class="mdl-navigation__link is-active" href="index.html">About</a>
+                    <a class="mdl-navigation__link" href="index.html">About</a>
                     <a class="mdl-navigation__link" href="team.html">The Team</a>
                     <a class="mdl-navigation__link" href="mentor.html">Mentors</a>
                     <a class="mdl-navigation__link" href="blog.html">Blog</a>
-                </nav>
+					<a class="mdl-navigation__link is-active" href="photos.html">Photos</a>
                 </nav>
             </div>
         </header>
+        <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                    <a class="mdl-navigation__link" href="index.html">About</a>
+                    <a class="mdl-navigation__link" href="team.html">The Team</a>
+                    <a class="mdl-navigation__link" href="mentor.html">Mentors</a>
+                    <a class="mdl-navigation__link" href="blog.html">Blog</a>
+					<a class="mdl-navigation__link is-active" href="photos.html">Photos</a>
+                </nav>
+            </nav>
+        </div>
+    </div>
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/1.jpg" class="image"><img src="images/thumbs/1.jpg" alt="" /></a>
-							<h2>Blot Test</h2>
-							<p>The chemical enzyme DAP is used here to verify the validity of the test, it serves as a colorimetric test.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/2.jpg" class="image"><img src="images/thumbs/2.jpg" alt="" /></a>
-							<h2>Electrode Preparation</h2>
-							<p>The creation of the lateral flow strip requires the use of copper tape strips.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/3.jpg" class="image"><img src="images/thumbs/3.jpg" alt="" /></a>
-							<h2>Screen-Printing Approach</h2>
-							<p>We used the Goco screen printing implementation, it however has some issues that still need to be worked on.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/4.jpg" class="image"><img src="images/thumbs/4.jpg" alt="" /></a>
-							<h2>Possible Electrode Placement</h2>
-							<p>This placement will perhaps serve to trigger the start of the TB test.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/5.jpg" class="image"><img src="images/thumbs/5.jpg" alt="" /></a>
-							<h2>Gel Creation</h2>
-							<p>We will use this agarose gel for gel electrophoresis.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/6.jpg" class="image"><img src="images/thumbs/6.jpg" alt="" /></a>
-							<h2>Early Electrode Interface</h2>
-							<p>This setup was worked, but was tedious to set up.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/7.jpg" class="image"><img src="images/thumbs/7.jpg" alt="" /></a>
-							<h2>Early Electrode Interface 2</h2>
-							<p>This setup was worked, but was tedious to set up.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/8.jpg" class="image"><img src="images/thumbs/8.jpg" alt="" /></a>
-							<h2>Lateral Flow Tests</h2>
-							<p>We used multiple preganacy tests to determin which nanoparticle and detergent has the best flow across the nitrocellulose paper.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/9.jpg" class="image"><img src="images/thumbs/9.jpg" alt="" /></a>
-							<h2>Another Electrode Tape Approach</h2>
-							<p>This set up had some issues because the adhesive on the metal tape was interfering with our data acquisition.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="images/thumbs/10.jpg" alt="" /></a>
-							<h2>Newest Electrode Arrangement</h2>
-							<p>Uses a copper metal tape the adhesive did not interfere with our data collection.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="images/thumbs/11.jpg" alt="" /></a>
-							<h2>Newest Electrode Arrangement 2</h2>
-							<p>Uses a copper metal tape the adhesive did not interfere with our data collection.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="images/thumbs/12.jpg" alt="" /></a>
-							<h2>Arduino + Screen Assembly</h2>
-							<p>This displays out current reading as well as our integration values (still work in progress). Eventually we will miniature this set up.</p>
-						</article>
-					</div>
-
+	<div class="m-p-g">
+			<div class="m-p-g__thumbs" data-google-image-layout data-max-height="350">
+			    <img src="images\0.png" data-full="images\0.png" class="m-p-g__thumbs-img" />
+				<img src="images\1.jpg" data-full="images\1.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\2.jpg" data-full="images\2.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\3.jpg" data-full="images\3.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\4.jpg" data-full="images\4.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\5.jpg" data-full="images\5.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\6.jpg" data-full="images\6.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\7.jpg" data-full="images\7.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\8.jpg" data-full="images\8.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\9.jpg" data-full="images\9.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\10.jpg" data-full="images\10.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\11.jpg" data-full="images\11.jpg" class="m-p-g__thumbs-img" />
+				<img src="images\12.jpg" data-full="images\12.jpg" class="m-p-g__thumbs-img" />
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+			<div class="m-p-g__fullscreen"></div>
+		</div>
 
-	</body>
+		<script src="./dist/js/material-photo-gallery.js"></script>
+		<script>
+			var elem = document.querySelector('.m-p-g');
+
+			document.addEventListener('DOMContentLoaded', function() {
+				var gallery = new MaterialPhotoGallery(elem);
+			});
+		</script>
+	
+	
+    <script src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+</body>
+
 </html>

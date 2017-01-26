@@ -261,7 +261,7 @@
   }
 }
 .material-card.mc-active .mc-footer {
-  overflow: visible;
+  overflow: scroll;
   position: absolute;
   top: calc(100% - 16px);
   left: 16px;
